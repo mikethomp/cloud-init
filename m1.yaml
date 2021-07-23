@@ -6,7 +6,6 @@ hostname: m1
 k3os:
   data_sources:
   - aws
-  - cdrom
   modules:
   - kvm
   - nvme
@@ -21,5 +20,6 @@ k3os:
   - 1.us.pool.ntp.org
   k3s_args:
   - server
+  - "--no-deploy=traefik"
   - "--cluster-cidr=10.200.0.0/16"
   - "--service-cidr=10.201.0.0/16"
