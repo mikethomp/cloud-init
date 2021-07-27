@@ -21,5 +21,6 @@ k3os:
   k3s_args:
   - server
   - "--no-deploy=traefik"
+  - "--no-deploy=servicelb"
   - "--cluster-cidr=10.200.0.0/16"
   - "--service-cidr=10.201.0.0/16"
