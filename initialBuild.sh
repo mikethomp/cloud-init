@@ -16,7 +16,7 @@ data:
     - name: default
       protocol: layer2
       addresses:
-      - 10.0.202.2-10.0.202.255
+      - 10.0.0.100-10.0.0.200
 _EOF_
 kubectl apply -f metallbconfig.yaml
 
